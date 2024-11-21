@@ -45,7 +45,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "LazyDeveloper")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # LOG CHANNELS *
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002299960957'))
 LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', 0))
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
 PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS'))
@@ -91,9 +91,9 @@ LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','LayDeveloperr')  # WITHOUT @ [  a
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+tl1Ll8L8TbQwMjdl") #[ without @ ]
 
 # Url Shortner
-URL_MODE = is_enabled((environ.get("URL_MODE","True")), False) # make it true to enable url shortner in groups or pm
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'atglinks.com') #Always use website url from api section 
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '72a7f0131e5e657e37cf7e2a9e928a616b671cf5')
+URL_MODE = is_enabled((environ.get("URL_MODE"," True ")), False) # make it true to enable url shortner in groups or pm
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'modijiurl.Com') #Always use website url from api section 
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '4906a94c24843d66112e8b706b999057dcc8d942')
 lazy_groups = environ.get('LAZY_GROUPS','')
 LAZY_GROUPS = [int(lazy_groups) for lazy_groups in lazy_groups.split()] if lazy_groups else None # ADD GROUP ID IN THIS VARIABLE 
 my_users = [int(my_users) if id_pattern.search(my_users) else my_users for my_users in environ.get('MY_USERS', '').split()]
